@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="es">
+    <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+
+    <title>Echecars - Taller Mecánico en Rosario</title>
+    <meta name="description" content="EcheCars Rosario — Taller mecánico profesional, service completo, lavado premium, promociones y turnos rápidos en Constitución 1283, Rosario." />
+    <meta name="keywords" content="taller mecánico Rosario, servicio mecánico, diagnóstico computarizado, frenos, tren delantero, correas, mecánico profesional, reparación de autos, mantenimiento automotor">
+    <link rel="stylesheet" href="styles.css"/>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+            extend: {
+                colors: {
+                primary: "#FF4500", // A vibrant orange-red for accents
+                "background-light": "#FFFFFF",
+                "background-dark": "#0A2240", // Deep blueprint blue
+                },
+                fontFamily: {
+                display: ["Roboto Mono", "monospace"], // Technical, blueprint-style font
+                sans: ["Roboto", "sans-serif"],
+                },
+                borderRadius: {
+                DEFAULT: "0.5rem", // 8px
+                },
+                backgroundImage: {
+                'blueprint-grid': "linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px)",
+                },
+                backgroundSize: {
+                'blueprint-grid': '20px 20px',
+                },
+                keyframes: {
+                    fadeIn: {
+                        'from': { opacity: 0, transform: 'translateY(20px)' },
+                        'to': { opacity: 1, transform: 'translateY(0)' },
+                    },
+                    drawIn: {
+                        '0%': { opacity: 0, 'clip-path': 'inset(0 100% 0 0)' },
+                        '50%': { opacity: 1 },
+                        '100%': { 'clip-path': 'inset(0 0 0 0)' },
+                    }
+                },
+                animation: {
+                    'fade-in': 'fadeIn 1s ease-out forwards',
+                    'draw-in': 'drawIn 2s ease-out forwards',
+                }
+            },
+            },
+        };
+     </script>
+        
+    </head>
+    <body class="bg-background-light dark:bg-background-dark font-sans text-stone-800 dark:text-stone-200 transition-colors duration-300">
+        
+        <div class="relative min-h-screen overflow-hidden">
+        <div class="absolute inset-0 bg-blueprint-grid opacity-50 dark:opacity-100"></div>
+        
+        <header class="fixed top-0 left-0 right-0 z-20 p-4 sm:p-6 bg-[#062132] shadow-lg">
+            <div class="container mx-auto flex justify-between items-center">
+            <a class="flex items-center gap-2 text-2xl font-bold font-display text-stone-900 dark:text-white" href="#">
+            <img alt="Echecars Logo" class="h-24 w-auto" src="logo.jpg"/>
+            </a>
+            <nav class="hidden md:flex space-x-6 font-display text-white">
+            <a class="hover:text-primary dark:hover:text-primary transition-colors" href="#servicios">Servicios</a>
+            <a class="hover:text-primary dark:hover:text-primary transition-colors" href="#nosotros">Nosotros</a>
+            <a class="hover:text-primary dark:hover:text-primary transition-colors" href="#reseñas">Reseñas</a>
+            <a class="hover:text-primary dark:hover:text-primary transition-colors" href="#contacto">Contacto</a>
+            </nav>
+            <a class="bg-primary text-white font-bold py-2 px-5 rounded-DEFAULT hover:opacity-90 transition-opacity font-display text-sm" href="https://wa.me/5493415069886">PEDIR TURNO</a>
+            </div>
+        </header>
+        
+        <main class="relative z-10 container mx-auto px-4 pt-32 pb-16 sm:pt-40">
+        <section class="flex flex-col lg:flex-row items-center justify-center text-center lg:text-left gap-8 min-h-[calc(80vh-10rem)]">
+        <div class="lg:w-1/2 flex flex-col items-center lg:items-start animate-hidden">
+        <h1 class="font-display font-bold text-4xl sm:text-5xl md:text-6xl text-stone-900 dark:text-white uppercase leading-tight">Precisión Mecánica <br class="hidden sm:block"/> <span class="text-primary">en cada detalle.</span></h1>
+        <p class="mt-4 max-w-lg text-stone-700 dark:text-stone-300">Tu taller de confianza en Rosario. Analizamos cada componente para darte un diagnóstico certero y una solución duradera.</p>
+        <div class="mt-8 flex flex-col sm:flex-row gap-4">
+        <a class="bg-primary text-white font-bold py-3 px-8 rounded-DEFAULT hover:opacity-90 transition-opacity flex items-center justify-center gap-2" href="#servicios">
+        <span class="material-icons-outlined">build</span>
+                                    Ver Servicios
+                                </a>
+        <a class="bg-stone-200 dark:bg-blue-900/50 border border-stone-300 dark:border-blue-700 text-stone-800 dark:text-white font-bold py-3 px-8 rounded-DEFAULT hover:bg-stone-300 dark:hover:bg-blue-900 transition-colors flex items-center justify-center gap-2" href="#promociones">
+        <span class="material-icons-outlined">local_offer</span>
+                                    Promociones
+                                </a>
+        </div>
+        </div>
+        <div class="lg:w-1/2 mt-8 lg:mt-0 relative">
+        <img alt="Diagrama de un motor de auto" class="w-full h-auto object-contain drop-shadow-2xl draw-in" src="faro.png"/>
+        <div class="absolute top-[15%] left-[5%] -translate-x-1/2 hidden md:block">
+        <div class="flex items-center gap-2 fade-in" style="animation-delay: 1.5s;">
+        
+        
+        </div>
+        </div>
+        </section>
+        <section class="py-20 animate-hidden" id="nosotros">
+        <div class="text-center mb-12">
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-stone-900 dark:text-white uppercase">¿Por qué <span class="text-primary">elegirnos</span>?</h2>
+        <p class="mt-2 text-stone-600 dark:text-stone-400 max-w-2xl mx-auto">Combinamos tecnología de punta con años de experiencia para cuidar tu vehículo.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white/5 dark:bg-blue-900/30 p-6 rounded-lg border border-stone-200 dark:border-blue-800 text-center">
+        <span class="material-icons-outlined text-4xl text-primary mb-4">memory</span>
+        <h3 class="font-display font-bold text-xl text-stone-900 dark:text-white mb-2">Diagnóstico Avanzado</h3>
+        <p class="text-stone-600 dark:text-stone-400 text-sm">Utilizamos scanners y herramientas de última generación para identificar problemas con máxima precisión.</p>
+        </div>
+        <div class="bg-white/5 dark:bg-blue-900/30 p-6 rounded-lg border border-stone-200 dark:border-blue-800 text-center">
+        <span class="material-icons-outlined text-4xl text-primary mb-4">verified_user</span>
+        <h3 class="font-display font-bold text-xl text-stone-900 dark:text-white mb-2">Transparencia Total</h3>
+        <p class="text-stone-600 dark:text-stone-400 text-sm">Te explicamos cada paso del proceso y te ofrecemos un presupuesto detallado sin sorpresas.</p>
+        </div>
+        <div class="bg-white/5 dark:bg-blue-900/30 p-6 rounded-lg border border-stone-200 dark:border-blue-800 text-center">
+        <span class="material-icons-outlined text-4xl text-primary mb-4">workspace_premium</span>
+        <h3 class="font-display font-bold text-xl text-stone-900 dark:text-white mb-2">Garantía de Calidad</h3>
+        <p class="text-stone-600 dark:text-stone-400 text-sm">Trabajamos con repuestos de primeras marcas y garantizamos cada una de nuestras reparaciones.</p>
+        </div>
+        </div>
+        </section>
+        <section class="py-20 bg-stone-100 dark:bg-blue-900/50 rounded-lg p-8 sm:p-12 animate-hidden" id="promociones">
+        <div class="text-center mb-12">
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-stone-900 dark:text-white uppercase">Promociones del <span class="text-primary">Mes</span></h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div class="flex items-start gap-4 p-6 bg-white dark:bg-background-dark rounded-DEFAULT shadow-md">
+        <span class="material-icons-outlined text-3xl text-primary mt-1">oil_barrel</span>
+        <div>
+        <h3 class="font-display font-bold text-lg text-stone-900 dark:text-white">Cambio de Aceite y Filtro</h3>
+        <p class="text-stone-600 dark:text-stone-400 text-sm mt-1">Revisión de 15 puntos de control + Cambio de aceite sintético y filtro. ¡Reservá tu turno!</p>
+        <p class="text-primary font-bold text-xl mt-3">$25.000 ARS</p>
+        </div>
+        </div>
+        <div class="flex items-start gap-4 p-6 bg-white dark:bg-background-dark rounded-DEFAULT shadow-md">
+        <span class="material-icons-outlined text-3xl text-primary mt-1">air</span>
+        <div>
+        <h3 class="font-display font-bold text-lg text-stone-900 dark:text-white">Servicio de Aire Acondicionado</h3>
+        <p class="text-stone-600 dark:text-stone-400 text-sm mt-1">Control de fugas, limpieza de circuito y recarga de gas para un verano fresco.</p>
+        <p class="text-primary font-bold text-xl mt-3">$18.000 ARS</p>
+        </div>
+        </div>
+        </div>
+        </section>
+        <section class="py-20 animate-hidden" id="servicios">
+        <div class="text-center mb-12">
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-stone-900 dark:text-white uppercase">Nuestros <span class="text-primary">Servicios</span></h2>
+        </div>
+        <div class="max-w-5xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 sm:gap-8 text-center font-display">
+        <div class="flex flex-col items-center">
+        <span class="material-icons-outlined text-4xl text-primary">speed</span>
+        <p class="mt-2 text-sm text-stone-800 dark:text-stone-300">Afinación de Motor</p>
+        </div>
+        <div class="flex flex-col items-center">
+        <span class="material-icons-outlined text-4xl text-primary">album</span>
+        <p class="mt-2 text-sm text-stone-800 dark:text-stone-300">Frenos y ABS</p>
+        </div>
+        <div class="flex flex-col items-center">
+        <span class="material-icons-outlined text-4xl text-primary">settings_input_component</span>
+        <p class="mt-2 text-sm text-stone-800 dark:text-stone-300">Tren Delantero</p>
+        </div>
+        <div class="flex flex-col items-center">
+        <span class="material-icons-outlined text-4xl text-primary">electric_bolt</span>
+        <p class="mt-2 text-sm text-stone-800 dark:text-stone-300">Electricidad</p>
+        </div>
+        <div class="flex flex-col items-center">
+        <span class="material-icons-outlined text-4xl text-primary">tire_repair</span>
+        <p class="mt-2 text-sm text-stone-800 dark:text-stone-300">Alineación y Balanceo</p>
+        </div>
+        <div class="flex flex-col items-center">
+        <span class="material-icons-outlined text-4xl text-primary">computer</span>
+        <p class="mt-2 text-sm text-stone-800 dark:text-stone-300">Inyección Electrónica</p>
+        </div>
+        <div class="flex flex-col items-center">
+        <span class="material-icons-outlined text-4xl text-primary">local_car_wash</span>
+        <p class="mt-2 text-sm text-stone-800 dark:text-stone-300">Distribución</p>
+        </div>
+        <div class="flex flex-col items-center">
+        <span class="material-icons-outlined text-4xl text-primary">ac_unit</span>
+        <p class="mt-2 text-sm text-stone-800 dark:text-stone-300">Aire Acondicionado</p>
+        </div>
+        </div>
+        </section>
+        <section class="py-20 animate-hidden" id="reseñas">
+        <div class="text-center mb-12">
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-stone-900 dark:text-white uppercase">Lo que dicen <span class="text-primary">nuestros clientes</span></h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white/5 dark:bg-blue-900/30 p-6 rounded-lg border border-stone-200 dark:border-blue-800 flex flex-col">
+        <div class="flex items-center mb-4">
+        <div class="flex text-primary">
+        <span class="material-icons-outlined">star</span>
+        <span class="material-icons-outlined">star</span>
+        <span class="material-icons-outlined">star</span>
+        <span class="material-icons-outlined">star</span>
+        <span class="material-icons-outlined">star</span>
+        </div>
+        </div>
+        <p class="text-stone-600 dark:text-stone-400 text-sm mb-4 italic">"Excelente atención y profesionalismo. Resolvieron un problema que otros talleres no pudieron. 100% recomendables."</p>
+        <p class="font-display font-bold text-stone-800 dark:text-white mt-auto">- Juan Pérez</p>
+        </div>
+        <div class="bg-white/5 dark:bg-blue-900/30 p-6 rounded-lg border border-stone-200 dark:border-blue-800 flex flex-col">
+        <div class="flex items-center mb-4">
+        <div class="flex text-primary">
+        <span class="material-icons-outlined">star</span>
+        <span class="material-icons-outlined">star</span>
+        <span class="material-icons-outlined">star</span>
+        <span class="material-icons-outlined">star</span>
+        <span class="material-icons-outlined">star_half</span>
+        </div>
+        </div>
+        <p class="text-stone-600 dark:text-stone-400 text-sm mb-4 italic">"Muy buena experiencia. Me explicaron todo con detalle y el presupuesto fue respetado a rajatabla. Volveré sin dudas."</p>
+        <p class="font-display font-bold text-stone-800 dark:text-white mt-auto">- María Gonzalez</p>
+        </div>
+        <div class="bg-white/5 dark:bg-blue-900/30 p-6 rounded-lg border border-stone-200 dark:border-blue-800 flex flex-col">
+        <div class="flex items-center mb-4">
+        <div class="flex text-primary">
+        <span class="material-icons-outlined">star</span>
+        <span class="material-icons-outlined">star</span>
+        <span class="material-icons-outlined">star</span>
+        <span class="material-icons-outlined">star</span>
+        <span class="material-icons-outlined">star</span>
+        </div>
+        </div>
+        <p class="text-stone-600 dark:text-stone-400 text-sm mb-4 italic">"El mejor taller de Rosario. Llevo mi auto desde hace años y siempre me lo dejan impecable. Confianza total."</p>
+        <p class="font-display font-bold text-stone-800 dark:text-white mt-auto">- Carlos Rodriguez</p>
+        </div>
+        </div>
+        </section>
+        <section class="py-20 animate-hidden" id="contacto">
+        <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 bg-white/5 dark:bg-blue-900/30 p-8 sm:p-12 rounded-lg border border-stone-200 dark:border-blue-800">
+        <div>
+        <h2 class="font-display text-3xl font-bold text-stone-900 dark:text-white uppercase">Contacto y <span class="text-primary">Turnos</span></h2>
+        <p class="mt-4 text-stone-600 dark:text-stone-400">Envianos tu consulta o llamanos para coordinar un turno. ¡Estamos para ayudarte!</p>
+        <div class="mt-8 space-y-4">
+        <div class="flex items-center gap-4 text-stone-800 dark:text-stone-300">
+        <span class="material-icons-outlined text-primary text-2xl">location_on</span>
+        <span>Constitución 1283, Rosario, Santa Fe</span>
+        </div>
+        <div class="flex items-center gap-4 text-stone-800 dark:text-stone-300">
+        <span class="material-icons-outlined text-primary text-2xl">call</span>
+        <span>+54 9 0341 506-9886</span>
+        </div>
+        <div class="flex items-center gap-4 text-stone-800 dark:text-stone-300">
+        <span class="material-icons-outlined text-primary text-2xl">schedule</span>
+        <span>Lunes a Viernes de 8:30 a 19:00 hs</span>
+        </div>
+        </div>
+        </div>
+        <div>
+        <form action="#" class="space-y-4" method="POST">
+        <div>
+        <label class="sr-only" for="name">Nombre</label>
+        <input class="w-full bg-stone-100 dark:bg-blue-900 border-stone-300 dark:border-blue-700 rounded-DEFAULT focus:ring-primary focus:border-primary placeholder-stone-500 dark:placeholder-stone-400" id="name" name="name" placeholder="Tu Nombre" type="text"/>
+        </div>
+        <div>
+        <label class="sr-only" for="email">Email</label>
+        <input class="w-full bg-stone-100 dark:bg-blue-900 border-stone-300 dark:border-blue-700 rounded-DEFAULT focus:ring-primary focus:border-primary placeholder-stone-500 dark:placeholder-stone-400" id="email" name="email" placeholder="Tu Email" type="email"/>
+        </div>
+        <div>
+        <label class="sr-only" for="message">Mensaje</label>
+        <textarea class="w-full bg-stone-100 dark:bg-blue-900 border-stone-300 dark:border-blue-700 rounded-DEFAULT focus:ring-primary focus:border-primary placeholder-stone-500 dark:placeholder-stone-400" id="message" name="message" placeholder="Tu Consulta..." rows="4"></textarea>
+        </div>
+        <button class="w-full bg-primary text-white font-bold py-3 px-6 rounded-DEFAULT hover:opacity-90 transition-opacity" type="submit">Enviar Mensaje</button>
+        </form>
+        </div>
+        </div>
+        </section>
+        </main>
+        <footer class="relative z-10 bg-[#062132] text-stone-300 font-display pt-16 pb-8">
+        <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
+        
+            <div>
+            <a class="flex items-center justify-center md:justify-start gap-2 text-2xl font-bold text-white mb-4" href="#">
+            <img alt="Echecars Logo" class="h-24 w-auto" src="logo.jpg"/>
+            </a>
+        
+        <p class="text-sm text-stone-400">Precisión mecánica en cada detalle. Tu taller de confianza en Rosario.</p>
+        </div>
+        <div class="text-sm">
+        <h4 class="font-bold text-white uppercase tracking-wider mb-4">Contacto</h4>
+        <ul class="space-y-3">
+        <li class="flex items-center justify-center md:justify-start gap-3">
+        <span class="material-symbols-outlined text-primary text-xl">location_on</span>
+        <span class="text-stone-400">Constitución 1283, Rosario, Santa Fe</span>
+        </li>
+        <li class="flex items-center justify-center md:justify-start gap-3">
+        <span class="material-symbols-outlined text-primary text-xl">call</span>
+        <a class="text-stone-400 hover:text-primary transition-colors" href="tel:+5493411234567">+54 9 0341 506-9886</a>
+        </li>
+        <li class="flex items-center justify-center md:justify-start gap-3">
+        <span class="material-symbols-outlined text-primary text-xl">schedule</span>
+        <span class="text-stone-400">Lun-Vie: 8:30 - 19:00 hs</span>
+        </li>
+        </ul>
+        </div>
+        <div>
+        <h4 class="font-bold text-white uppercase tracking-wider mb-4">Seguinos</h4>
+        <div class="flex justify-center md:justify-start space-x-4">
+        <a class="hover:text-primary transition-colors" href="https://www.instagram.com/echecarsrosario/">Instagram</a>
+        
+        </div>
+        </div>
+        </div>
+        <div class="mt-12 pt-8 border-t border-white/10 text-center">
+        <p class="text-sm text-stone-400">© 2025 Echecars. Todos los derechos reservados. Powered by: Florencia Sappia</p>
+        </div>
+        </div>
+        </footer>
+        </div>
+    <script src="script.js"></script>
+    </body>
+</html>
